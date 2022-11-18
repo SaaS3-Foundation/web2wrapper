@@ -21,7 +21,7 @@ async function bootstrap() {
   SwaggerModule.setup('/swagger', app, document);
 
   await app.listen(3301);
-  console.log(`Composer is running on: ${await app.getUrl()}`);
+  console.log(`Web2 Wrapper server is running on: ${await app.getUrl()}`);
 }
 
 bootstrap();
