@@ -12,10 +12,10 @@ async function bootstrap() {
   app.enableCors();
 
   const config = new DocumentBuilder()
-  .setTitle('Web2 Wrapper')
-  .setDescription('Wrappers for web2.0 API like Qatar2022 WorldCup API')
-  .setVersion('0.1.0')
-  .build();
+    .setTitle('Web2 Wrapper')
+    .setDescription('Wrappers for web2.0 API like Qatar2022 WorldCup API')
+    .setVersion('0.1.0')
+    .build();
 
   const document = SwaggerModule.createDocument(app, config);
   SwaggerModule.setup('/swagger', app, document);
